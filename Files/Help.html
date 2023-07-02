@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Designed by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive FAQ Accordion | CodingLab </title>-->
+    <link rel="stylesheet" href="Help.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karagiri.com | Help</title>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="image-box">
+            <img src="https://i.ibb.co/TbtMDvr/karagiri.png" alt="">
+        </div>
+        <div class="accordion-text">
+            <div class="title">Help</div>
+            <ul class="faq-text">
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">What is the status of my order?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>Once your order is shipped we will send you another email to confirm you the expected delivery
+                        date as well as the link to track your order (when the delivery method allows it).</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">What payment methods do you accept?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>We additionnaly offer support for Paypal, Amazon Pay, Apple Pay, and Google Pay.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">What if I'm not home?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>You may also have to go to your local post office to collect your package in case it cannot be
+                        delivered to you..</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">Do you have physical stores?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>The full list of stores that resell our products can be found on our stores locator map.</p>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <div class="question-arrow">
+                        <span class="question">How long does it take to process a return?</span>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <p>Returns are confirmed within 14 days of receiving the package at our warehouse.</p>
+                    <span class="line"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        let li = document.querySelectorAll(".faq-text li");
+        for (var i = 0; i < li.length; i++) {
+            li[i].addEventListener("click", (e) => {
+                let clickedLi;
+                if (e.target.classList.contains("question-arrow")) {
+                    clickedLi = e.target.parentElement;
+                } else {
+                    clickedLi = e.target.parentElement.parentElement;
+                }
+                clickedLi.classList.toggle("showAnswer");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

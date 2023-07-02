@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karagiri.com</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="covid covid2021new">
+    <div class="covid covid2021new covid2021new-mobile" class="margueimg-left" />
+    <marquee><span>NEW YEAR SALE!</span> Upto <span>50% OFF</span> on selected styles. Limited time offer !</marquee>
+  </div>
+  <div id="header2021" class="header2020 header2020new clearfix">
+    <img
+      src="data:image/png;base64,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"
+      alt="" />
+    <header class="text-gray-600 body-font">
+      <div class="
+            container
+            mx-auto
+            flex flex-wrap
+            p-5
+            flex-col
+            md:flex-row
+            items-center
+          ">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+          <a class="mr-5 hover:text-gray-900" href=""> Home </a>
+          <a class="mr-5 hover:text-gray-900" href="">Product</a>
+          <a class="mr-5 hover:text-gray-900" href="">About Us</a>
+          <a class="mr-5 hover:text-gray-900" href="Help.html" target="_blank">Help</a>
+          <a class="hover:text-gray-900" href="login.html" target="_blank">Login</a>
+        </nav>
+        <a class="
+              flex
+              order-first
+              lg:order-none lg:w-1/5
+              title-font
+              font-medium
+              items-center
+              text-gray-900
+              lg:items-center lg:justify-center
+              mb-4
+              md:mb-0
+            ">
+          <span class="ml-3 text-xl" style="font-family: ul-serif">WELCOME</span>
+        </a>
+
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+          <button class="
+                inline-flex
+                items-center
+                bg-gray-100
+                border-0
+                py-1
+                px-3
+                focus:outline-none
+                hover:bg-gray-200
+                rounded
+                text-base
+                mt-4
+                md:mt-0
+              "><a href="https://www.likeadiva.com/" target="new page">
+              Shop Now </a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <center><img src="https://i.ibb.co/x8PDHdN/s-letter-logo-png-849.png" alt="S logo " border="0" width="100"></a>
+    </center>
+    <br>
+    <center><b style="font-family: serif;font-size: xx-large;">S A R L A</b></center>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="
+                text-s text-yellow-500
+                tracking-widest
+                font-medium
+                title-font
+                mb-1
+              ">
+            THE BEST SHOP IN JALGAON
+          </h2>
+          <h1 class="
+                sm:text-3xl
+                text-2xl
+                font-medium
+                title-font
+                mb-4
+                text-gray-900
+              ">
+            Buy the best collection from KARAGIRI
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            we are giving our best in last 8 years of in this market and we also
+            added new stock of sarees, Lehenga's and fall's also sooo just check it
+            out and visit our shop as soon as possible.
+          </p>
+          <h4><b>Thank You</b></h4>
+        </div>
+        <hr <div class="flex flex-wrap">
+        <div class="
+                xl:w-1/4
+                lg:w-1/2
+                md:w-full
+                px-8
+                py-6
+                border-l-2 border-gray-200 border-opacity-60
+              ">
+          <h2 class="
+                  text-lg
+                  sm:text-xl
+                  text-gray-900
+                  font-medium
+                  title-font
+                  mb-2
+                ">
+            Saree
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            Here we added some new sarees collection
+          </p>
+          <a class="text-yellow-500 inline-flex items-center" href="">Check It
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="
+                xl:w-1/4
+                lg:w-1/2
+                md:w-full
+                px-8
+                py-6
+                border-l-2 border-gray-200 border-opacity-60
+              ">
+          <h2 class="
+                  text-lg
+                  sm:text-xl
+                  text-gray-900
+                  font-medium
+                  title-font
+                  mb-2
+                ">
+            Lehenga
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            Buy the best Lehenga for your special one .
+          </p>
+          <a class="text-yellow-500 inline-flex items-center" href="">Check t
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="
+                xl:w-1/4
+                lg:w-1/2
+                md:w-full
+                px-8
+                py-6
+                border-l-2 border-gray-200 border-opacity-60
+              ">
+          <h2 class="
+                  text-lg
+                  sm:text-xl
+                  text-gray-900
+                  font-medium
+                  title-font
+                  mb-2
+                ">
+            Fall
+          </h2>
+          <p class="leading-relaxed text-base mb-4">
+            here we adde lotys of new falls for youe expensive sarees.
+          </p>
+          <a class="text-yellow-500 inline-flex items-center" href="">Check It
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="
+                xl:w-1/4
+                lg:w-1/2
+                md:w-full
+                px-8
+                py-6
+                border-l-2 border-gray-200 border-opacity-60
+              ">
+
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+
+          </svg>
+          </a>
+        </div>
+      </div>
+      <button class="
+              flex
+              mx-auto
+              mt-16
+              text-white
+              bg-yellow-500
+              border-0
+              py-2
+              px-8
+              focus:outline-none
+              hover:bg-yellow-600
+              rounded
+              text-lg
+            "><a href="">
+          Shop Now
+        </a>
+      </button>
+      <br>
+      <br>
+      <hr>
+      <br>
+  </div>
+  </section>
+  <section class="text-gray-600 body-font">
+
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/GVVzw9z/Lemon-Yellow.jpg"
+              alt="Lemon-Yellow" border="0"></a>
+
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href=""> Lemon Yellow</h2></a>
+            <p class="mt-1"> ₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/99Nm0Bz/Blue-4779.jpg"
+              alt="Blue" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Blue</h2></a>
+            <p class="mt-1"> ₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/9nvCGK5/Pink-7630.jpg"
+              alt="Pink" border="0"></a>
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Pink</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/F8HbmLP/White-7630.jpg"
+              alt="White" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">White</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/TH95v2D/Maroon-4779.jpg"
+              alt="Maroon" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Maroon</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/Sw3ypQT/Brown-4779.jpg"
+              alt="Brown" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Brown</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img src="https://i.ibb.co/BnxqC6h/Blue-Royal-7630.jpg"
+              alt="Dark Blue" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Dark Blue</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden"><img
+              src="https://i.ibb.co/fXcgV92/Dark-Yellow-4779.jpg" alt="Dark Yellow" border="0"></a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Fall</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium"><a href="">Dark Yellow</h2></a>
+            <p class="mt-1">₹20.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="
+      flex
+      mx-auto
+      mt-16
+      text-white
+      bg-yellow-500
+      border-0
+      py-2
+      px-8
+      focus:outline-none
+      hover:bg-yellow-600
+      rounded
+      text-lg
+    "><a href="">
+
+        Check it
+      </a>
+    </button>
+  </section>
+  <br>
+  <br>
+  <hr>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex w-full mb-20 flex-wrap">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Designer Saree</h1>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Showcase your versatile dressing sense with this
+          delightful saree. Crafted with a beautiful solid pattern and a flowy pure georgette fabric, this saree lends
+          you a more graceful appearance.
+          Classic burgundy solid saree
+          Fashionable solid pattern
+          Velvet blouse piece
+          Poly-georgette, dry clean
+          The saree comes with an unstitched blouse piece
+          The blouse worn by the model might be for modelling purpose only. Check the image of the blouse piece to
+          understand how the actual blouse piece looks like..</p>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+  </section>
+  <br>
+
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" src="https://i.ibb.co/9rYSKtc/image-1.jpg" width="400px" height="720px">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Banarasi Saree</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Orange Silk Base Border Saree</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">4 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxed">Look radiant and delicate as a flower in this party-perfect saree.
+            The pretty and mesmerizing Orange Saree is crafted with a Silk Base Luxe Fabric to make you look apart from
+            all.
+            The stunning drape features beautifully worked floral motifs and borders with zari, sequin, and thread for
+            that graceful appeal.
+            To enhance the beauty of the drape and make you look even more pretty it is paired with a Matching
+            Embroidered Blouse..</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex">
+              <span class="mr-3">Color</span>
+
+              <button
+                class="border-2 border-gray-300 ml-1 bg-yellow-500 rounded-full w-6 h-6 focus:outline-none"></button>
+            </div>
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Length</span>
+              <div class="relative">
+                <select
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
+                  <option>5 M</option>
+                  <option>5.5 M</option>
+                  <option>6 M</option>
+                  <option>6.5 M</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ppricelatest">
+            <div class="ppricewas"
+              style="margin-top: 0;margin-right: 10px; text-decoration: line-through;font-size: 24px;">₹ 10350.00</div>
+
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 9150.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"><a
+                href="Payment Option 1.html" target="_blank">Buy</button></a>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" width="400px" height="720px" src="https://i.ibb.co/yQmcdZ4/image-2.jpg">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Bandhani Saree </h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Yellow and Turquoise Bandhani Silk Saree</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">4 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxed">This handcrafted saree in silk, features bandhani patterns and zari weaved motifs
+            all over. It comes with a contrasting turquoise zari embroidered round neck silk blouse. Pair this saree
+            with heels and fine accessories to complete the look. .</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex">
+              <span class="mr-3">Color</span>
+
+              <button
+                class="border-2 border-gray-300 ml-1 bg-yellow-500 rounded-full w-6 h-6 focus:outline-none"></button>
+            </div>
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Length</span>
+              <div class="relative">
+                <select
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
+                  <option>4.8 M</option>
+                  <option>5 M</option>
+                  <option>5.5 M</option>
+                  <option>6 M</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ppricelatest">
+            <div class="ppricewas"
+              style="margin-top: 0;margin-right: 10px; text-decoration: line-through;font-size: 24px;">₹ 11500.00</div>
+
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 9000.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"><a
+                href="Payment Option 2.html" target="_blank">Buy</button></a>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" width="400px" height="720px" src="https://i.ibb.co/5n51Jr7/image-3.jpg">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Designer Saree</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Grey Bordered Chiffon Saree</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">5 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxed">Refresh your party wardrobe with this luxe drape.
+            The luxe Chiffon Crafted Saree features an elegant floral border worked with thread and sequin.
+            To enhance the beauty of the attire it's completed with a designer embellished Net Blouse with see-through
+            sleeves for that glam look.</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex">
+              <span class="mr-3">Color</span>
+
+              <button
+                class="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
+
+            </div>
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Length</span>
+              <div class="relative">
+                <select
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
+                  <option>5 M</option>
+                  <option>5.5 M</option>
+                  <option>5.7 M</option>
+                  <option>6 M</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ppricelatest">
+            <div class="ppricewas"
+              style="margin-top: 0;margin-right: 10px; text-decoration: line-through;font-size: 24px;">₹ 8950.00</div>
+
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 6960.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"><a
+                href="Payment Option 3.html" target="_blank">Buy</button></a>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" width="400px" height="720px" src="https://i.ibb.co/L6CY0rw/image-4.jpg">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest"> Designer Saree</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Wine-Red Silk Saree</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">4 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxed">Make everyone look at you in awe and leave them speechless with your style quotient
+            in this drape
+            The mesmerizing Wine Red drape crafted in Silk will give you that royal appearance.
+            The lovely drape features a sequin and thread embroidered border and is paired with a complementary Designer
+            Blouse..</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex">
+              <span class="mr-3">Color</span>
+
+              <button class="border-2 border-gray-300 ml-1 bg-red-500 rounded-full w-6 h-6 focus:outline-none"></button>
+            </div>
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Length</span>
+              <div class="relative">
+                <select
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
+                  <option>5 M</option>
+                  <option>5.5 M</option>
+                  <option>5.7 M</option>
+                  <option>6 M</option>
+                </select>
+
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ppricelatest">
+            <div class="ppricewas"
+              style="margin-top: 0;margin-right: 10px; text-decoration: line-through;font-size: 24px;">₹ 5940.00</div>
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 4950.00 </span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"><a
+                href="Payment Option 4.html" target="_blank">Buy</button></a>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <section class="text-gray-600 body-font">
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <link rel="stylesheet" href="https://www.likeadiva.com/css/magiczoomplus.css" media="screen" />
+        <img alt="ecommerce" width="400px" height="720px" src="https://i.ibb.co/6WykxZv/image-5.jpg">
+        <div class="MagicZoomPup"
+          style="z-index: 10; position: absolute; overflow: hidden; display: none; visibility: hidden; width: 300px; height: 463px; opacity: 0.5; left: 188px; top: 108.7px;">
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Silk Saree</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Light Blue Silk Base Border Saree</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">5 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxedFam">Looking for that perfect drape to make you look charming and graceful?
+            Then look no more as you've landed on the saree which ticks all the style boxes.
+            The mesmerizing Light Blue Saree is crafted with a Silk Base Luxe Fabric and features intricately
+            embroidered floral motifs and the border with zari, sequin, and thread to make you look luxurious.
+            To make the drape even more stunning it is paired with a Light Pink Embroidered Blouse.</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex">
+              <span class="mr-3">Color</span>
+
+              <button
+                class="border-2 border-gray-300 ml-1 bg-blue-100 rounded-full w-6 h-6 focus:outline-none"></button>
+            </div>
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Length</span>
+              <div class="relative">
+                <select
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
+                  <option>5 M</option>
+                  <option>5.5 M</option>
+                  <option>5.8 M</option>
+                  <option>6 M</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ppricelatest">
+            <div class="ppricewas"
+              style="margin-top: 0;margin-right: 10px; text-decoration: line-through;font-size: 24px;">₹ 10715.00</div>
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 8930.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"><a
+                href="Payment Option 5.html" target="_blank">Buy</button></a>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <button class="
+      flex
+      mx-auto
+      mt-16
+      text-white
+      bg-yellow-500
+      border-0
+      py-2
+      px-8
+      focus:outline-none
+      hover:bg-yellow-600
+      rounded
+      text-lg
+    ">
+
+    Check it
+  </button>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  </div>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex w-full mb-20 flex-wrap">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Designer Lehengas
+        </h1>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Glam Up With Exquisite Indian Lehenga
+          Indian ethnic dresses indeed look absolutely exquisite and drop-dead-gorgeous. But if you do a little
+          experiment here and there, it won’t mean any harm, isn’t it? Modern ladies are too fond of contemporary
+          designs and usually opt for modernised traditional attires.
+
+          Among Indian dresses bought online, Designer Lehengas have probably the highest demand. A heavy, layered-skirt
+          called the lehenga, a blouse or the choli and a matching dupatta complete the Lehenga. Lehengas look rich and
+          exquisite, if styled properly. You can experiment with the cholis and make it one of the most fashionable
+          outfits in your wardrobe.</p>
+      </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+
+          <h2 class="home-heading-h2">Party wear</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Orange and Turquoise Silk Lehenga Choli</h1>
+          <div class="flex mb-4">
+            <a class="flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1">Description</a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+          </div>
+          <p class="leading-relaxed mb-4">Celebrate ethnicity with this foil printed lehenga choli set. The set comes
+            with gotta patti delicately crafted on blouse and the borders of net dupatta. The sequin work on dupatta and
+            the contrasting match of printing on the lehenga makes it an alluring choice.</p>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Color</span>
+            <span class="ml-auto text-gray-900">Orange</span>
+          </div>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Size</span>
+            <span class="ml-auto text-gray-900">Medium - 44 inch</span>
+          </div>
+          <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+            <span class="text-gray-500">Material</span>
+            <span class="ml-auto text-gray-900">Silk</span>
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 7999.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Buy</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img alt="ecommerce" width="430px" height="400px" src="https://i.ibb.co/yPS17hp/lehenga-1.jpg">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+
+          <h2 class="home-heading-h2">Party Wear</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Purple Zari Embroidered Silk Indian Lehenga
+          </h1>
+          <div class="flex mb-4">
+            <a class="flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1">Description</a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+          </div>
+          <p class="leading-relaxed mb-4">Look gorgeous in this designer embroidered lehenga choli with pink dupatta.
+            The satin silk lehenga features beautiful floral embroidery all over with rich zari work. The hem of the
+            lehenga is bordered with a beautiful lace. It comes with unstitched purple satin silk choli/blouse. It's
+            teamed with baby pink net dupatta. The dupatta is lace bordered and features small butis with sequins work.
+          </p>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Color</span>
+            <span class="ml-auto text-gray-900">Purple</span>
+          </div>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Size</span>
+            <span class="ml-auto text-gray-900">Medium - 44 inch</span>
+          </div>
+          <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+            <span class="text-gray-500">Material</span>
+            <span class="ml-auto text-gray-900">Silk</span>
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 10500.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Buy</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img alt="ecommerce" width="430px" height="400px" src="https://i.ibb.co/z2LZf3W/lehenga-2.jpg">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+
+          <h2 class="home-heading-h2">Party Wear</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Light Pink Silk Embroidered Lehenga</h1>
+          <div class="flex mb-4">
+            <a class="flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1">Description</a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+          </div>
+          <p class="leading-relaxed mb-4">Be the head turner at parties in this Light Pink Lehenga Set that features
+            charming floral motifs embroidered with cording, thread, and sequin on Silk Lehenga.
+            The matching Butterfly Net Dupatta is adorned with a beautiful embroidered silk border and floral motifs all
+            over.
+            The lehenga comes with a matching embroidered Silk Blouse that has a sweetheart neckline and back tie-up
+            Doris.</p>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Color</span>
+            <span class="ml-auto text-gray-900">Light pink</span>
+          </div>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Size</span>
+            <span class="ml-auto text-gray-900">Medium - 44 inch</span>
+          </div>
+          <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+            <span class="text-gray-500">Material</span>
+            <span class="ml-auto text-gray-900">Silk</span>
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 12220.00 </span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Buy</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img alt="ecommerce" width="430px" height="400px" src="https://i.ibb.co/pjNKtGd/lehenga-3.jpg">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+
+          <h2 class="home-heading-h2">Party Wear</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Pink and Grey Designer Lehenga with Beautiful
+            Embroidery</h1>
+          <div class="flex mb-4">
+            <a class="flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1">Description</a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+          </div>
+          <p class="leading-relaxed mb-4">Curate a phenomenal look by wearing this Indian lehenga. The colourful floral
+            embroidered pattern on the lehenga makes it a captivating choice. The sequin studded blouse and zari
+            embroidered dupatta is all you need to be the cynosure in any party you attend.</p>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Color</span>
+            <span class="ml-auto text-gray-900">Pink & Grey</span>
+          </div>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Size</span>
+            <span class="ml-auto text-gray-900">Medium - 44 inch</span>
+          </div>
+          <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+            <span class="text-gray-500">Material</span>
+            <span class="ml-auto text-gray-900">Silk</span>
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 10000.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Buy</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img alt="ecommerce" width="430px" height="400px" src="https://i.ibb.co/7JLqn51/lehenga-4.jpg">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+
+          <h2 class="home-heading-h2">Party Wear</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Yellow & Pink Net Embroidered Lehenga Set</h1>
+          <div class="flex mb-4">
+            <a class="flex-grow text-yellow-500 border-b-2 border-yellow-500 py-2 text-lg px-1">Description</a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+            <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1"></a>
+          </div>
+          <p class="leading-relaxed mb-4">Representing the unmatched elegance of this gorgeous Net crafted Lehenga to
+            make you look ethereal.
+            The beautifully flared lehenga, has floral motifs embroidered all over it in thread and zari.
+            It is paired with a complimentary Pink Zari Embroidered Silk Blouse, and Greenish colour Net Dupatta
+            decorated with zari embroidered pink border and sequin motifs all over it. </p>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Color</span>
+            <span class="ml-auto text-gray-900">Yellow & Pink</span>
+          </div>
+          <div class="flex border-t border-gray-200 py-2">
+            <span class="text-gray-500">Size</span>
+            <span class="ml-auto text-gray-900">Medium - 44 inch</span>
+          </div>
+          <div class="flex border-t border-b mb-6 border-gray-200 py-2">
+            <span class="text-gray-500">Material</span>
+            <span class="ml-auto text-gray-900">Silk</span>
+          </div>
+          <div class="flex">
+            <span class="title-font font-medium text-2xl text-gray-900">₹ 12215.00</span>
+            <button
+              class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Buy</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img alt="ecommerce" width="430px" height="400px" src="https://i.ibb.co/Sx1SMT8/lehenga-5.jpg">
+      </div>
+    </div>
+  </section>
+  <button class="
+      flex
+      mx-auto
+      mt-16
+      text-white
+      bg-yellow-500
+      border-0
+      py-2
+      px-8
+      focus:outline-none
+      hover:bg-yellow-600
+      rounded
+      text-lg
+    ">
+
+    Check it
+  </button>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8"
+          viewBox="0 0 975.036 975.036">
+          <path
+            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+          </path>
+        </svg>
+        <p class="leading-relaxed text-lg">A beautifully curated collection of exquisite sarees each handpicked , a
+          renowned name in the field of beauty. Words don't do justice to the wide variety and range of sarees available
+          at Karagiri each with a unique personal touch! Being a proud owner of a Karagiri I can vouch for its quality
+          and wish to own a lot more from the grand collection!</p>
+        <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
+        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">SARLA SONAR</h2>
+        <p class="text-gray-500">Owner Of Karagiri</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-600 body-font relative">
+    <div class="absolute inset-0 bg-gray-300">
+      <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29797.604314856948!2d75.56707539543774!3d21.004637829671054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1641827829398!5m2!1sen!2sin"
+        style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+    </div>
+    <div class="container px-5 py-24 mx-auto flex">
+      <div
+        class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Send Your Feedback</p>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message"
+            class="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button
+          class="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Submit</button>
+        <b class="text-xs text-gray-500 mt-3" align="center">Thank You
+        </b>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <hr>
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Saree</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" terget="_blank">Banarasi Saree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Silk Saree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Bandhani Saree</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Kanjeevaram Saree</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Lehenga</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Party Wear</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Wedding Wear</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Bridal Wear</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Festival Wear</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Fall</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Terry-cot falls</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Polyester falls</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Thick falls</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="" target="_blank">Cotton falls</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+          <div
+            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <label for="footer-field" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="text" id="footer-field" name="footer-field"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div><br>
+          <button
+            class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Submit
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+
+          <img
+            src="data:image/png;base64,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"
+            alt="" width="200" />
+          <span class="ml-3 text-xl"></span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 Karagiri —
+          <a " rel=" noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@ Kunal Sonar</a>
+        </p>
+
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-700" href="https://www.facebook.com/kunal.wankhede.140/" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-700" href="https://twitter.com/Viru45297613" target="_blank">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-700" href="https://www.instagram.com/kunal_sonar_19/" target="_blank">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-700" href="https://www.linkedin.com/in/kunal-sonar-133108227/" target="_blank">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
